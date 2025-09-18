@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Listado de Productos</title>
+@extends('layouts.app')
+@section('css')
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -96,9 +91,9 @@
       background: #218838; /* Verde más oscuro */
     }
   </style>
-</head>
-<body>
-  <!-- 🔹 Topbar -->
+@endsection
+@section('content')
+ <!-- 🔹 Topbar -->
   <div class="topbar">
     Gestión de Productos
   </div>
@@ -212,4 +207,17 @@
     <div class="card"><img src="https://picsum.photos/300?random=12"><div class="card-content"><h3>Producto 12</h3><p>Descripción breve.</p><div class="price">$38.00</div><a href="#" class="btn">Ver más</a></div></div>
     <div class="card"><img src="https://picsum.photos/300?random=13"><div class="card-content"><h3>Producto 13</h3><p>Descripción breve.</p><div class="price">$48.00</div><a href="#" class="btn">Ver más</a></div></div>
     <div class="card"><img src="https://picsum.photos/300?random=14"><div class="card-content"><h3>Producto 14</h3><p>Descripción breve.</p><div class="price">$58.00</div><a href="#" class="btn">Ver más</a></div></div>
-    
+
+@endsection
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Listado de Productos</title>
+  
+</head>
+<body>
+ 
+  </body>
