@@ -9,20 +9,7 @@
     }
 
     /* 🔹 Topbar reutilizada */
-    .topbar {
-      width: 100%;
-      background: #28a745; /* Verde */
-      color: white;
-      padding: 15px 25px;
-      font-size: 18px;
-      font-weight: bold;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-      text-align: left;
-    }
+    
 
     .container {
       max-width: 1200px;
@@ -94,29 +81,27 @@
 @endsection
 @section('content')
  <!-- 🔹 Topbar -->
-  <div class="topbar">
-    Gestión de Productos
-  </div>
+  
 
   <!-- 🔹 Listado de productos -->
   <div class="container">
     <!-- Generamos 20 productos -->
     <!-- Puedes cambiar las imágenes por tus URLs -->
     <div class="card">
-      <img src="https://picsum.photos/300?random=1" alt="Producto 1">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.JMna-egfFo8pt-BWdLj9NwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Producto 1">
       <div class="card-content">
-        <h3>Producto 1</h3>
-        <p>Descripción breve del producto.</p>
+        <h3>Iphone 16 plus</h3>
+        <p>Iphone 16 plus morado galaxia</p>
         <div class="price">$25.00</div>
         <a href="#" class="btn">Ver más</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://picsum.photos/300?random=2" alt="Producto 2">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.46vlhP8f6ZP0F7eXVUjpLQHaIq?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Producto 2">
       <div class="card-content">
-        <h3>Producto 2</h3>
-        <p>Otro producto con detalles interesantes.</p>
+        <h3>Air fyer</h3>
+        <p>Freidora de aire para casa.</p>
         <div class="price">$45.00</div>
         <a href="#" class="btn">Ver más</a>
       </div>

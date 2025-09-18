@@ -10,21 +10,7 @@
       flex-direction: column;
     }
 
-    /* 🔹 Topbar */
-    .topbar {
-      width: 100%;
-      background: #28a745; /* Verde */
-      color: white;
-      padding: 20px 30px;
-      font-size: 20px;
-      font-weight: bold;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-      text-align: left;
-    }
+    
 
     /* 🔹 Contenedor principal para centrar */
     .container {
@@ -134,9 +120,7 @@
 @endsection
 @section('content')
  <!-- 🔹 Topbar -->
-  <div class="topbar">
-    Gestión de Productos
-  </div>
+  
 
   <!-- 🔹 Contenedor -->
   <div class="container">
