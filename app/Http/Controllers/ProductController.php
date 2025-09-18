@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
      function index(){
-        return "Listado Productos";
+        return view("products.index");
     }
     function create(){
          return 'Formulario de creacion de productos';
