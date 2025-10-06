@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Brand extends Model
+class brand extends Model
 {
-    protected $table = 'brandg';
+    protected $table = 'brand';
     protected $fillable = ['name'];
-    public $timestamps = true
+    public $timestamps = true;
    
 }
