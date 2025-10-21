@@ -1,29 +1,43 @@
-
  body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding-top: 70px; /* espacio para la topbar */
       background: #f2f2f2; /* Fondo yeso */
     }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.6);
+  padding: 0.75rem 1rem;
+}
 
-    /* 🔹 Topbar reutilizada */
-    .topbar {
-      width: 100%;
-      background: #28a745; /* Verde */
-      color: white;
-      padding: 15px 25px;
-      font-size: 18px;
-      font-weight: bold;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-      text-align: left;
-    }
+.navbar-brand {
+  font-weight: bold;
+  color: #28a745 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #28a745 !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #28a745 !important;
+}
+   
 
     /* 🔹 Layout principal */
-    .container {
+    .container1 {
       max-width: 1200px;
       margin: 40px auto;
       background: #fff;
@@ -32,7 +46,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
-      box-shadow: 0 10px 25px rgba(40, 167, 69, 0.25); /* Sombra verde */
+      box-shadow: 0 10px 25px rgba(40, 167, 69, 0.6);
     }
 
     /* 🔹 Imagen */
@@ -47,7 +61,7 @@
       max-width: 500px;
       border-radius: 12px;
       object-fit: cover;
-      box-shadow: 0 6px 20px rgba(40, 167, 69, 0.3); /* Sombra verde */
+      box-shadow: 0 6px 20px rgba(40, 167, 69, 0.6);
     }
 
     /* 🔹 Detalles */
@@ -73,7 +87,7 @@
     .price {
       font-size: 24px;
       font-weight: bold;
-      color: #28a745; /* Verde */
+      color: #28a745;
       margin-bottom: 20px;
     }
 
@@ -99,7 +113,7 @@
 
     .features li::before {
       content: "✔";
-      color: #28a745; /* Verde */
+      color: #28a745;
       position: absolute;
       left: 0;
       font-size: 14px;
@@ -114,7 +128,7 @@
       display: inline-block;
       padding: 12px 20px;
       margin-right: 12px;
-      background: #28a745; /* Verde */
+      background: #28a745;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
@@ -124,7 +138,7 @@
     }
 
     .btn:hover {
-      background: #218838; /* Verde más oscuro */
+      background: #28a745;
       transform: scale(1.05);
     }
 

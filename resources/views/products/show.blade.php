@@ -4,12 +4,10 @@
 @endsection
 @section('content')
  <!-- 🔹 Topbar -->
-  <div class="topbar">
-    Gestión de Productos
-  </div>
+
 
   <!-- 🔹 Contenido del producto -->
-  <div class="container">
+  <div class="container1">
     <div class="product-image">
       <img src="https://picsum.photos/600/600?random=31" alt="Producto destacado">
     </div>

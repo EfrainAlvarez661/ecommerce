@@ -4,12 +4,10 @@
 @endsection
 @section('content')
  <!-- 🔹 Topbar -->
-  <div class="topbar">
-    Gestión de Productos
-  </div>
+
 
   <!-- 🔹 Contenedor -->
-  <div class="container">
+  <div class="container1">
     <form action="" method="post" enctype="multipart/form-data">
       <h2>Registrar Producto</h2>
 

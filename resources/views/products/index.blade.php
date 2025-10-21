@@ -5,12 +5,10 @@
 @endsection
 @section('content')
  <!-- 🔹 Topbar -->
-  <div class="topbar">
-    Gestión de Productos
-  </div>
+  
 
   <!-- 🔹 Listado de productos -->
-  <div class="container">
+  <div class="container1">
     <!-- Generamos 20 productos -->
     <!-- Puedes cambiar las imágenes por tus URLs -->
     <div class="card">
