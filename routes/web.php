@@ -13,3 +13,6 @@ Route::prefix('products')->controller(ProductController::class)->group(function 
     Route::get('/create',"create");
     Route::get('/{id}/{category}',"show");
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,0 +1,128 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding-top: 70px; /* espacio para la topbar */
+      background: #f2f2f2; /* Fondo yeso */
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.6);
+  padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #28a745 !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #28a745 !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #28a745 !important;
+}
+   
+
+.container1 {
+  max-width: 600px;
+  margin: 80px auto 0 auto; /* 🔹 Solo 80px desde arriba */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(40, 167, 69, 0.6);
+}
+.card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0;
+}
+
+/* 🔹 Quita el fondo del header */
+.card-header {
+  background: none;
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+  padding: 10px 0;
+}
+
+/* 🔹 Ajusta el cuerpo del formulario */
+.card-body {
+  background: transparent;
+  padding: 20px 0;
+}
+
+/* 🧾 Inputs limpios */
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.btn-link {
+  display: block;           /* Hace que ocupe toda la línea */
+  margin-top: 10px;         /* Espacio debajo del botón */
+  padding-left: 0;          /* Alinea con el botón */
+  text-align: left;         /* O usa center si prefieres centrado */
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.6);
+}
+
+/* ✅ Botón primario */
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #28a745;
+}
+
+/* 🔗 Enlace de recuperación */
+.btn-link {
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+.row .col-md-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* 🔹 Mueve el label arriba del input */
+label.col-md-4 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: left !important;
+  margin-bottom: 6px;
+}

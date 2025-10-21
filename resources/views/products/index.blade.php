@@ -1,90 +1,14 @@
 @extends('layouts.app')
 @section('css')
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding-top: 80px; /* espacio para la topbar */
-      background: #f2f2f2; /* Fondo yeso */
-    }
-
-    /* 🔹 Topbar reutilizada */
-    
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(40, 167, 69, 0.3); /* Sombra verde */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 28px rgba(40, 167, 69, 0.5); /* Sombra verde */
-    }
-
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 1rem;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 18px;
-      color: #333;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      font-size: 16px;
-      font-weight: bold;
-      color: #28a745; /* Verde */
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 8px 12px;
-      background: #28a745; /* Verde */
-      color: #fff;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #218838; /* Verde más oscuro */
-    }
-  </style>
+ <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
+  
 @endsection
 @section('content')
  <!-- 🔹 Topbar -->
   
 
   <!-- 🔹 Listado de productos -->
-  <div class="container">
+  <div class="container1">
     <!-- Generamos 20 productos -->
     <!-- Puedes cambiar las imágenes por tus URLs -->
     <div class="card">
