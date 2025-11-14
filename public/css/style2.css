@@ -109,3 +109,16 @@ body {
 .btn:hover {
   background: #28a745;
 }
+.category-link {
+  text-decoration: none;   
+  color: inherit;          
+  transition: transform 0.2s ease-in-out;
+  display: block;
+}
+.category-link:hover {
+  transform: translateY(-3px);
+}
+
+.category-box:hover {
+  background-color: #f5f5f5;
+}

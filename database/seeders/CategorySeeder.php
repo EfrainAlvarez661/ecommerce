@@ -14,7 +14,7 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $mycategory1= new Category();
-        $mycategory1->name='Electronics';
+        $mycategory1->name='All';
         $mycategory1->save();
         $mycategory2= new Category();
         $mycategory2->name='Phones';
