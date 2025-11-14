@@ -17,6 +17,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/category', [CategoryController::class, "create"])->name('categoryCreate');
     Route::post('/category/store', [CategoryController::class, "store"])->name('categoryStore');
     Route::post('/product/store', [ProductController::class, "store"])->name('productStore');
+    Route::get('/products', [ProductController::class, "table"])->name('productTable');
 });
 
 Auth::routes();
