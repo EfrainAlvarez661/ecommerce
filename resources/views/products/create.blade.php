@@ -1,9 +1,10 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <h2 class="mb-4">Registrar Producto</h2>
+    <h2 class="mb-4">New Product</h2>
     <div class="card">
         <div class="card-body">
+            
             <form action="{{ route('productStore') }}" method="post" enctype="multipart/form-data">
                 @csrf
 
@@ -16,7 +17,8 @@
                     @enderror
                     <div class="input-group input-group-outline mb-3">
                         <label for="name" class="form-label">Nombre del Producto</label>
-                        <input type="text" class="form-control" id="name" name="name" value="{{old('name')}}">
+                        <input type="text" class="form-control" id="name" name="name"
+                            value="{{ old('name') }}">
                     </div>
 
                     <!-- Descripción del Producto -->
@@ -25,7 +27,7 @@
                     @enderror
                     <div class="input-group input-group-outline mb-3">
                         <label for="description" class="form-label">Descripción</label>
-                        <textarea class="form-control" id="description" name="description" rows="3" > {{old('description')}}</textarea>
+                        <textarea class="form-control" id="description" name="description" rows="3"> {{ old('description') }}</textarea>
                     </div>
 
                     <!-- Precio del Producto -->
@@ -35,7 +37,7 @@
                     <div class="input-group input-group-outline mb-3">
                         <label for="price" class="form-label">Precio</label>
                         <input type="number" class="form-control" id="price" name="price" step="0.01"
-                            min="0" value="{{old('price')}}">
+                            min="0" value="{{ old('price') }}">
                     </div>
 
 

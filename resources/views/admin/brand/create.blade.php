@@ -1,9 +1,9 @@
 @extends('admin.layouts.app')
 @section('content')
-    <h1>New Category</h1>
+    <h1>New Brand</h1>
      <div class="card">
         <div class="card-body">
-            <form action="{{ route('categoryStore') }}" method="post">
+            <form action="{{ route('brandStore') }}" method="post">
                 @csrf
                 <div class="input-group input-group-outline mb-4">
                     <input type="text" name="name" class="form-control">
