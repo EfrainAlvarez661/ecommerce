@@ -1,54 +1,65 @@
-@extends('layouts.app')
-@section('css')
-  <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
-@endsection
+@extends('admin.layouts.app')
+
 @section('content')
- <!-- 🔹 Topbar -->
+    <h2 class="mb-4">Registrar Producto</h2>
+    <div class="card">
+        <div class="card-body">
+            <form action="{{route('productStore')}}" method="post" enctype="multipart/form-data">
+                @csrf
+
+                <form method="POST" enctype="multipart/form-data">
 
 
-  <!-- 🔹 Contenedor -->
-  <div class="container1">
-    <form action="" method="post" enctype="multipart/form-data">
-      <h2>Registrar Producto</h2>
+                    <!-- Nombre del Producto -->
+                    <div class="input-group input-group-outline mb-3">
+                        <label for="name" class="form-label">Nombre del Producto</label>
+                        <input type="text" class="form-control" id="name" name="name" >
+                    </div>
 
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name">
+                    <!-- Descripción del Producto -->
+                    <div class="input-group input-group-outline mb-3">
+                        <label for="description" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="description" name="description" rows="3" ></textarea>
+                    </div>
 
-      <label for="description">Description</label>
-      <textarea name="description" id="description"></textarea>
+                    <!-- Precio del Producto -->
+                    <div class="input-group input-group-outline mb-3">
+                        <label for="price" class="form-label">Precio</label>
+                        <input type="number" class="form-control" id="price" name="price" step="0.01"
+                            min="0" >
+                    </div>
 
-      <label for="price">Price</label>
-      <input type="text" name="price" id="price">
 
-      <label for="image">Image</label>
-      <label for="image" class="file-label">📂 Seleccionar Imagen</label>
-      <input type="file" name="image" id="image">
+                    <!-- Marca del Producto -->
+                    <div class="input-group input-group-outline mb-3">
 
-      <label for="brand">Brand</label>
-      <input type="text" name="brand" id="brand">
+                        <select name="brand" class="form-control" id="brandCategory">
+                            <option selected disabled>-- Selecciona una marca --</option>
+                            @foreach ($brands as $item)
+                                <option value="{{$item->id}}" >{{ $item->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
 
-      <label for="category">Categoría</label>
-      <select name="category" id="category">
-        <option value="tech">Tecnología</option>
-        <option value="fashion">Moda</option>
-        <option value="home">Hogar</option>
-      </select>
 
-      <button type="submit">Guardar Producto</button>
-    </form>
-  </div>
+                    <!-- Categoría del Producto -->
+                    <div class="input-group input-group-outline mb-3">
+
+                        <select name="category" class="form-control" id="productCategory">
+                            <option selected disabled>-- Selecciona una categoría --</option>
+                            @foreach ($categories as $item)
+                                <option value="{{$item->id}}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Guardar Producto</button>
+                    </div>
+                </form>
+
+            </form>
+        </div>
+    </div>
 @endsection
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Formulario Productos</title>
-  
-</head>
-<body>
- 
-</body>
-</html>
